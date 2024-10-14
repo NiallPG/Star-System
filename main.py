@@ -1,11 +1,11 @@
 from flask import Flask, request, render_template_string
 from datetime import datetime
-import os
+
 
 app = Flask(__name__)
 
 
-# Define zodiac sign ASCII functions
+
 def capricorn_ascii():
     return """                  *<br>
              *<br>"""
