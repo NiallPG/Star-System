@@ -1,5 +1,6 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template_string
 from datetime import datetime
+import os
 
 app = Flask(__name__)
 
@@ -136,6 +137,7 @@ def display_zodiac_art(month, day):
         return sagittarius_ascii()
 
 
+# Route to display zodiac ASCII art
 @app.route('/')
 def zodiac():
     date_str = request.args.get('date', None)
@@ -151,7 +153,12 @@ def zodiac():
     else:
         result = "Please provide a date in the URL, e.g., /?date=2024-07-15"
 
-    return render_template('index.html', result=result)
+    # Load index.html from the root directory
+    with open('index.html') as file:
+        template = file.read()
+
+    # Use render_template_string to render the HTML directly
+    return render_template_string(template, result=result)
 
 
 if __name__ == "__main__":
