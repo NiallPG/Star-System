@@ -7,7 +7,7 @@ body {
     justify-content: center;
 }
 
-.container, .container-desc {
+.container, .description-container {
     width: 50%;
     margin: 50px 20px;
     padding: 20px;
@@ -27,7 +27,7 @@ h1, h2 {
     text-align: left;
 }
 
-.container-desc {
+.description-container {
     text-align: left;
 }
 
