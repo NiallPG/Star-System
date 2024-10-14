@@ -151,7 +151,7 @@ def zodiac():
     else:
         result = "Please provide a date in the URL, e.g., /?date=2024-07-15"
 
-    return render_template('zodiac.html', result=result)
+    return render_template('index.html', result=result)
 
 
 if __name__ == "__main__":
