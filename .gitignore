@@ -1,0 +1,16 @@
+# Python
+*.pyc
+__pycache__/
+
+# Virtual environments
+venv/
+env/
+
+# MacOS
+.DS_Store
+
+# PyCharm files
+.idea/
+
+# Flask
+instance/
