@@ -3,21 +3,21 @@ body {
     background-color: #071E22;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.container {
-    max-width: 800px;
-    margin: 50px auto;
+.container, .description-container {
+    width: 50%;
+    margin: 50px 20px;
     padding: 20px;
     background-color: #639FAB;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
     color: #FFFFFF;
+    text-align: center;
 }
 
-h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+h1, h2 {
     color: #FFFFFF;
 }
 
@@ -27,3 +27,10 @@ h1 {
     text-align: left;
 }
 
+.description-container {
+    text-align: left;
+}
+
+.description {
+    font-size: 1.1em;
+}
