@@ -1,1 +1,1 @@
-Early version of star system app. All new progress on star dashboard
+Early version of star system app. All new progress on event horizon app.
