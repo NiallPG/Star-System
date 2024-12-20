@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
+    <div class="dashboard">
+        <div class="container">
+            <h2>Your Zodiac Sign's ASCII Art</h2>
+            <pre class="ascii-art">{{ result|safe }}</pre>
+        </div>
 
-    <div class="container">
-        <h1>Your Zodiac Sign's ASCII Art</h1>
-        <pre class="ascii-art">{{ result|safe }}</pre>
-    </div>
-
-    <div class="description-container">
-        <h2>Zodiac Sign Description</h2>
-        <p class="description">{{ description }}</p>
+        <div class="description-container">
+            <h2>Zodiac Sign Description</h2>
+            <p class="description">{{ description }}</p>
+        </div>
     </div>
 </body>
 </html>
